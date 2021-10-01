@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <h1>Zetch Ballots</h1>
+      <p>Vote for your favorite President</p>
+      <form id="vote-form">
+        <p>
+          <label>
+              <input type="radio" name="zt" id="peter" value="Peter">
+              <span for="peter">Peter</span>
+          </label>
+        <p>
+          <label>
+              <input type="radio" name="zt" id="tepela" value="Tepela">
+              <span for="tepela">Tepela</span>
+          </label>
+        <p>
+          <label>
+              <input type="radio" name="zt" id="suzan" value="Suzan">
+              <span for="suzan">Suzan</span>
+          </label>
+        </p>
+        <p>
+          <label>
+              <input type="radio" name="zt" id="kamau" value="Kamau">
+              <span for="kamau">Kamau</span>
+          </label>
+        </p>
+        <input type="submit" value="Vote" class="btn">
+      </form>
+      <br>
+      <br>
+      <h5 style="text-align: center" id="chartTitle"></h5>
+      <div id="chartContainer" style="height: 300px;width:100%"></div>
+    </div>
+  
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/4.2.2/pusher.min.js"></script>
+    <script src="./canvasjs.min.js"></script>
+    <script src="./main.js"></script>
+  
+  </body>
+  
+</html>
