@@ -3,7 +3,7 @@ const bodyParser = require("body-parser")
 const cors = require("cors")
 const path = require("path")
 //DB config
-require("./config/db")
+require("./config/db.js")
 
 //app
 const app = express()
@@ -24,7 +24,7 @@ app.use(cors())
 app.use("/poll", poll)
 
 //port number
-const port = 3000
+const port = 3002
 
 //start server
 app.listen(port, () => console.log(`server started on ${port}`))
