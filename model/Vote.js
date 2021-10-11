@@ -1,5 +1,5 @@
-const mangoose = require("mongoose")
-const Schema = mangoose.Schema
+const mongoose = require("mongoose")
+const Schema = mongoose.Schema
 
 const VoteSchema = new Schema({
     zt:{
@@ -12,6 +12,6 @@ const VoteSchema = new Schema({
     }
 })
 //create collections and add schema
-const Vote = mangoose.model("Vote", VoteSchema)
+const Vote = mongoose.model("Vote", VoteSchema)
 
 module.exports = Vote
