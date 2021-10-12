@@ -15,6 +15,7 @@ let pusher = new Pusher({
 
 //set route
 router.get("/", (req, res) => {
+  //getting votes from the database
   Vote.find().then(votes => res.json({success:true,
   votes:votes}))
 });
@@ -23,8 +24,10 @@ router.post("/", (req, res) => {
     zt:req.body.zt,
     points: 1
   }
+  //saving the votes to the database
   new Vote(newVote).save().then(vote =>{
     pusher.trigger("zt-poll", "zt-vote", {
+      //convert vote points to intergers
       points:parseInt(vote.points),
       zt: vote.zt
     });

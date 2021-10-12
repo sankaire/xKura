@@ -1,6 +1,7 @@
 const mongoose = require("mongoose")
 const Schema = mongoose.Schema
 
+ //database schema
 const VoteSchema = new Schema({
     zt:{
         type:String,
