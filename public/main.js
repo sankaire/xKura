@@ -1,5 +1,4 @@
 const form = document.querySelector("#vote-form")
-
 //form submit event
 form.addEventListener("submit", (e) =>{
     const choice = document.querySelector("input[name = zt]:checked").value
