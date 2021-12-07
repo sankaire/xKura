@@ -1,0 +1,38 @@
+.reg__form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 30%;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: whitesmoke;
+    // align-items: center;
+    h2{
+        text-align: center;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+        input{
+            width: 100%;
+            padding: 15px;
+            border: none;
+            outline: none;
+            color: black;
+            border-radius: 25px;
+            font-size: medium;
+        }
+        #btn{
+            width: 50%;
+            text-align: center;
+            font-size: large;
+            background-color: bisque;
+        }
+    }
+    p{
+        text-align: center;
+    }
+}
