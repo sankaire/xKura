@@ -5,7 +5,7 @@ form.addEventListener("submit", (e) => {
   const data = { zt: choice };
 
   //fetching data from the page
-  fetch("http://localhost:3002/poll", {
+  fetch("https://zetech-33c35.web.app/poll", {
     method: "post",
     body: JSON.stringify(data),
     headers: new Headers({
@@ -20,7 +20,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 });
 //fetching the data that is submitted and visualizing it in the chart
-fetch("http://localhost:3002/poll")
+fetch("https://zetech-33c35.web.app/poll")
   .then((res) => res.json())
   .then((data) => {
     const votes = data.votes;
