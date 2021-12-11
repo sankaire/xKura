@@ -1,26 +1,30 @@
 const form = document.querySelector("#aspirants");
 //form submit event
-form.addEventListener("submit", (e) => {
-  const choice = document.querySelector("input[name = zt]:checked").value;
-  const data = { zt: choice };
+form.addEventListener(
+  "submit",
+  (e) => {
+    const choice = document.querySelector("input[name = zt]:checked").value;
+    const data = { zt: choice };
 
-  //fetching data from the page
-  fetch("http://localhost:3002/poll", {
-    method: "post",
-    body: JSON.stringify(data),
-    headers: new Headers({
-      "content-type": "application/json",
-    }),
-  })
-    //returning promisses first converting the response to json
-    .then((res) => res.json())
-    .then((data) => console.log(data))
-    .catch((err) => console.log(err));
+    //fetching data from the page
+    fetch("https://zetech-33c35.web.app/poll", {
+      method: "post",
+      body: JSON.stringify(data),
+      headers: new Headers({
+        "content-type": "application/json",
+      }),
+    })
+      //returning promisses first converting the response to json
+      .then((res) => res.json())
+      .then((data) => console.log(data))
+      .catch((err) => console.log(err));
 
-  e.preventDefault();
-});
+    e.preventDefault();
+  },
+  { once: true }
+);
 //fetching the data that is submitted and visualizing it in the chart
-fetch("http://localhost:3002/poll")
+fetch("https://zetech-33c35.web.app/poll")
   .then((res) => res.json())
   .then((data) => {
     const votes = data.votes;
