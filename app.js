@@ -23,7 +23,7 @@ const firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 // firebase.getAnalytics(app);
-// firebase.analytics();
+
 //DB config
 require("./config/db.js");
 
