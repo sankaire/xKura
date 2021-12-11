@@ -2,10 +2,15 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require("path");
+// const firebase = require("firebase");
+const firebase = require("firebase/app");
+require("firebase/analytics");
 
 //firebase init
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+// const initializeApp = require("firebase/app");
+// const getAnalytics = require("firebase/analytics");
+
+const app = express();
 
 const firebaseConfig = {
   apiKey: "AIzaSyBwVHqYOfyTxEPBcyjL5q26SaFjJQQGcF8",
@@ -16,15 +21,11 @@ const firebaseConfig = {
   appId: "1:608392251415:web:0127e8798f4490aa4a3452",
   measurementId: "${config.measurementId}",
 };
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
+// firebase.getAnalytics(app);
+// firebase.analytics();
 //DB config
 require("./config/db.js");
-
-//app
-const app = express();
 
 //routing
 const poll = require("./routes/poll");
@@ -41,7 +42,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
 app.use("/poll", poll);
-// app.use("/president", president);
+// app.use("/president", presidJent);
 
 //port number
 const port = 3002;
