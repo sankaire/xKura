@@ -4,6 +4,7 @@
   "description": "Polls app backend",
   "main": "app.js",
   "scripts": {
+    "build":"",
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
