@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="nav__bar">
+      <div class="logo">
+        <a href="./campaign.html">
+          <img src="../image/logo-removebg-preview.png" />
+        </a>
+      </div>
+      <div class="nav__info">
+        <ul class="nav__items">
+          <li class="nav__links">
+            <a href="chair.html">Chairperson</a>
+            <a href="jChair.html">Assistant chair</a>
+            <a href="secretary.html">Serectary</a>
+            <a href="tresurer.html">Tresurer</a>
+          </li>
+        </ul>
+      </div>
+      <button class="humbuger is-active">
+        <div class="bar"></div>
+      </button>
+    </nav>
+    <nav class="mobile-nav">
+      <ul class="nav__items">
+        <li class="nav__links">
+          <a href="chair.html">Chairperson</a>
+          <a href="jChair.html">Assistant chair</a>
+          <a href="secretary.html">Serectary</a>
+          <a href="tresurer.html">Tresurer</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <form id="aspirants" action="/pages/president" method="post">
+        <div class="upper__column">
+          <div class="asp__profile">
+            <img
+              src="../image/megan-bagshaw-BDWM-YM2aXg-unsplash (2).jpg"
+              alt=""
+            />
+            <h2>Tepela</h2>
+            <p>DCSS-01-1234/2020</p>
+            <input
+              type="radio"
+              name="zt"
+              id="tepela"
+              value="Tepela"
+              class="radio"
+              onClick="disable()"
+            />
+            <label for="tepela"></label>
+          </div>
+          <div class="asp__profile">
+            <img
+              src="../image/max-ilienerwise-YvWJOXHNJ94-unsplash.jpg"
+              alt=""
+            />
+            <h2>Suzan</h2>
+            <p>DCSS-01-1234/2020</p>
+            <input type="radio" name="zt" id="suzan" value="Suzan" />
+            <label for="suzan"></label>
+          </div>
+        </div>
+        <div class="lower__column">
+          <div class="asp__profile">
+            <img src="../image/houcine-ncib-B4TjXnI0Y2c-unsplash.jpg" alt="" />
+            <h2>Peter</h2>
+            <p>DCSS-01-1234/2020</p>
+            <input type="radio" name="zt" id="peter" value="Peter" />
+            <label for="peter"></label>
+          </div>
+          <div class="asp__profile">
+            <img
+              src="../image/christopher-campbell-rDEOVtE7vOs-unsplash.jpg"
+              alt=""
+            />
+            <h2>Kamau</h2>
+            <p>DCSS-01-1234/2020</p>
+            <input type="radio" name="zt" id="Kamau" value="Kamau" />
+            <label for="Kamau"></label>
+          </div>
+          <input type="submit" value="Vote" />
+        </div>
+      </form>
+      <div id="chartContainer"></div>
+    </main>
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/4.2.2/pusher.min.js"></script>
+    <script src="./canvasjs.min.js"></script>
+    <script src="./jChair.js"></script>
+  </body>
+</html>
