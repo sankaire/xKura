@@ -79,7 +79,7 @@ app.use("/poll", poll);
 app.use("/users", user);
 // app.use("/president", presidJent)
 //start server
-
-const dotenv = require("dotenv");
-dotenv.config();
-console.log(`Your port is ${process.env.PORT}`);
+const port = process.env.PORT || 3000;
+app.listen(port, "0.0.0.0", function () {
+  console.log("Listening on Port 3000");
+});

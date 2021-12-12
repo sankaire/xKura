@@ -17,6 +17,10 @@
   "bugs": {
     "url": "https://github.com/sankaire/evoting-backend/issues"
   },
+  "engines": {
+    "node": "v12.22.7",
+    "npm":"6.14.15"
+  },
   "homepage": "https://github.com/sankaire/evoting-backend#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
