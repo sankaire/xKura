@@ -7,7 +7,7 @@ form.addEventListener(
     const data = { zt: choice };
 
     //fetching data from the page
-    fetch("http://localhost:3002/poll", {
+    fetch("https://safepolls.herokuapp.com/poll", {
       method: "post",
       body: JSON.stringify(data),
       headers: new Headers({
@@ -24,7 +24,7 @@ form.addEventListener(
   // { once: true }
 );
 //fetching the data that is submitted and visualizing it in the chart
-fetch("http://localhost:3002/poll")
+fetch("https://safepolls.herokuapp.com/poll")
   .then((res) => res.json())
   .then((data) => {
     const votes = data.votes;
