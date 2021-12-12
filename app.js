@@ -80,5 +80,6 @@ app.use("/users", user);
 // app.use("/president", presidJent)
 //start server
 
-const port = 3002;
-app.listen(port, () => console.log(`server started on ${port}`));
+const dotenv = require("dotenv");
+dotenv.config();
+console.log(`Your port is ${process.env.PORT}`);
