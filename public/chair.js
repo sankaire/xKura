@@ -37,10 +37,10 @@ fetch("https://safepolls.herokuapp.com/poll")
       {}
     );
     let dataPoints = [
-      { label: "Triza", y: voteCounts.Triza },
-      { label: "Alan", y: voteCounts.Alan },
-      { label: "Dorothy", y: voteCounts.Dorothy },
-      { label: "Zack", y: voteCounts.Zack },
+      { label: "Rono", y: voteCounts.Rono },
+      { label: "Wanderi", y: voteCounts.Wanderi },
+      // { label: "Dorothy", y: voteCounts.Dorothy },
+      // { label: "Zack", y: voteCounts.Zack },
     ];
 
     const chartContainer = document.querySelector("#chartContainer");
@@ -78,3 +78,10 @@ fetch("https://safepolls.herokuapp.com/poll")
       });
     }
   });
+const menuBtn = document.querySelector(".humbuger");
+const mobileNav = document.querySelector(".mobile-nav");
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("is-active");
+  mobileNav.classList.toggle("is-active");
+});

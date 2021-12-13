@@ -65,15 +65,23 @@ main{
   // background-color: rgb(45, 67, 192);
   #aspirants{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     row-gap: 10px;
     width: 50%;
     height: auto;
     margin-left: 20px;
     border-right: 2px solid rgb(216, 208, 208);
     margin-top: 0;
+    .btn{
+      width: 50%;
+    }
+    .upper__column{
+      display: flex;
+    }
     // margin: 0 auto
       .asp__profile{
+        width: 500px;
+        border: 3px solid darkgray;
         padding: 20px;
         img{
           width: 300px;
@@ -141,7 +149,11 @@ main{
         // border-right: 2px solid rgb(216, 208, 208);
         border: none;
         margin-top: 0;
-        // margin: 0 auto;
+        // margin: 0 auto
+        .upper__column{
+          display: flex;
+          flex-direction: column;
+        }
           .asp__profile{
             padding: 20px;
             img{

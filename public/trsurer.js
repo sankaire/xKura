@@ -37,10 +37,10 @@ fetch("https://safepolls.herokuapp.com/poll")
       {}
     );
     let dataPoints = [
-      { label: "Peter", y: voteCounts.Peter },
-      { label: "Tepela", y: voteCounts.Tepela },
-      { label: "Suzan", y: voteCounts.Suzan },
-      { label: "Kamau", y: voteCounts.Kamau },
+      { label: "David", y: voteCounts.David },
+      { label: "Mbuvi", y: voteCounts.Mbuvi },
+      // { label: "Suzan", y: voteCounts.Suzan },
+      // { label: "Kamau", y: voteCounts.Kamau },
     ];
 
     const chartContainer = document.querySelector("#chartContainer");
@@ -78,3 +78,10 @@ fetch("https://safepolls.herokuapp.com/poll")
       });
     }
   });
+const menuBtn = document.querySelector(".humbuger");
+const mobileNav = document.querySelector(".mobile-nav");
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("is-active");
+  mobileNav.classList.toggle("is-active");
+});
