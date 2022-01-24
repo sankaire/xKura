@@ -1,168 +1,35 @@
-//variables
-$font-color:white;
-$background-color:black;
-//removing any automatic margin or padding
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-//removing  the white space from the page
-html,body {
-  margin:0;
-  padding:0;
-  overflow-x:hidden;
-}
-//nav bar styling
 .nav__bar{
-    // flex box
-    display: flex;
-    justify-content: space-evenly;
-    // background-color: rgb(71, 247, 71);
-    background-color: rgb(45, 67, 192);
-    align-items: center;
-    .logo{
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        img{
-            width: 200px;
-            object-fit: contain;
-        }
-    }
-    .nav__info{
-        .nav__items{
-            list-style-type: none;
-            }
-            .nav__links{
-                display: flex;
-                justify-content: space-evenly;
-                padding: 20px;
-                a{
-                    text-decoration: none;
-                    word-spacing: normal;
-                    padding: 10px;
-                    font-size: xx-large;
-                    // border: 3px solid $font-color;
-                    color: $font-color;
-                }
-              :hover{
-                background-color: aqua;
-              }
-            }
-        }
-        .humbuger{
-          display: none;
-        }
-    }
-main{
-  width: 100%;
   display: flex;
-  #chartContainer{
-    width: 100%;
-    height: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  .logo{
+    padding: 0;
+    margin: 0;
+    img{
+      object-fit: contain;
+      width: 200px;
+    }
   }
-  // background-color: rgb(45, 67, 192);
-  #aspirants{
+  .nav__info{
     display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    width: 50%;
-    height: auto;
-    margin-left: 20px;
-    border-right: 2px solid rgb(216, 208, 208);
-    margin-top: 0;
-    .btn{
-      width: 50%;
-    }
-    .upper__column{
-      display: flex;
-    }
-    // margin: 0 auto
-      .asp__profile{
-        width: 500px;
-        border: 3px solid darkgray;
-        padding: 20px;
-        img{
-          width: 300px;
-          object-fit: contain;
+    
+    .nav__items{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      li{
+        float: right;
+        a{
+          display: block;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          color: blue;
+          font-size: 20px;
         }
       }
-      #vote{
-        display: block;
-        padding: 10px;
-        margin-bottom: 50px;
-        margin-left: 0;
-        // text-align: center;
-        border: none;
-        background-color: blue;
-        font-size: x-large;
-      }
+    }
   }
 }
-@media  screen and(max-width: 768px){
-  .nav__bar{
-    // flex box
-    display: flex;
-    justify-content: space-evenly;
-    // background-color: rgb(71, 247, 71);
-    background-color: rgb(45, 67, 192);
-    align-items: center;
-    .logo{
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        img{
-            width: 150px;
-            object-fit: contain;
-        }
-    }
-    .nav__info{
-        .nav__items{
-            list-style-type: none;
-            }
-            .nav__links{
-
-                a{
-                    display: none;
-                }
-            }
-          }
-          .humbuger{
-            display: block;
-          }
-    }
-    main{
-      display: flex;
-      width: 600px;
-      flex-direction: column;
-      justify-content: center;
-      #chartContainer{
-        width: 400px;
-      }
-      #aspirants{
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
-        height: auto;
-        margin-left: 20px;
-        // border-right: 2px solid rgb(216, 208, 208);
-        border: none;
-        margin-top: 0;
-        // margin: 0 auto
-        .upper__column{
-          display: flex;
-          flex-direction: column;
-        }
-          .asp__profile{
-            padding: 20px;
-            img{
-              width: 300px;
-              object-fit: contain;
-            }
-          }
-        }
-    }
-}
-  
-
