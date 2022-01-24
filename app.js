@@ -37,6 +37,7 @@ require("./config/db.js");
 //routing
 const user = require("./routes/users");
 const poll = require("./routes/poll");
+
 //
 // const president = require("./routes/poll/president");
 
@@ -77,10 +78,9 @@ app.set("view engine", "ejs");
 
 app.use("/poll", poll);
 app.use("/users", user);
-// app.use("/president", presidJent)
-//start server
 
+ 
 const port = process.env.PORT || 3000;
 app.listen(port, "0.0.0.0", function () {
-  console.log("Listening on Port 3000");
+  console.log(`Listening on Port http://localhost:3000`);
 });
