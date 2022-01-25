@@ -80,7 +80,7 @@ app.use("/poll", poll);
 app.use("/users", user);
 
  
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 app.listen(port, "0.0.0.0", function () {
-  console.log(`Listening on Port http://localhost:3000`);
+  console.log(`Listening on Port http://localhost:3001`);
 });
