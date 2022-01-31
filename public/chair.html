@@ -27,7 +27,7 @@
             <a href="jChair.html">Assistant chair</a>
           </li>
           <li>
-            <a href="secretaary.html">Serectary</a>
+            <a href="secretary">Serectary</a>
           </li>
           <li>
             <a href="tresurer.html">Tresurer</a>
@@ -47,15 +47,15 @@
           <li class="nav__links">
             <a href="chair.html">Chairperson</a>
             <a href="jChair.html">Assistant chair</a>
-            <a href="secretary.html">Serectary</a>
+            <a href="secretary">Serectary</a>
             <a href="tresurer.html">Tresurer</a>
           </li>
         </li>
       </ul>
     </nav>
     <main>
-      <form id="aspirants" action="/pages/president" method="post">
-        <div class="upper__column">
+      <form id="aspirants" action="/poll" method="post">
+        <div class="upper__column"> 
           <div class="asp__profile">
             <img
               src="../image/iot.jpeg"
@@ -83,8 +83,9 @@
             <input type="radio" name="zt" id="wanderi" value="Wanderi" />
             <label for="wanderi"></label>
           </div>
-        </div class='btn' style="width:50%">
-          <input type="submit" value="Vote" />
+        </div>
+        <div class="btn">
+          <input type="submit" value="Vote" class="vote" />
         </div>
       </form>
       <div id="chartContainer"></div>
