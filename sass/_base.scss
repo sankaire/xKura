@@ -1,8 +1,16 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: whitesmoke;
+}
 .nav__bar{
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  background-color: white;
   .logo{
     padding: 0;
     margin: 0;
@@ -31,5 +39,45 @@
         }
       }
     }
+  }
+}
+main {
+  background-color: whitesmoke;
+  width: 100%;
+  #aspirants{
+    display: flex;
+    flex-direction: column;
+    .upper__column{
+      display: flex;
+      justify-content: space-around;
+      .asp__profile{
+        width: 500px;
+        background-color: white;
+        margin-top: 10px;
+        text-align: center;
+        img{
+          width: 500px;
+          height: 333px;
+          object-fit: contain;
+        }
+      }
+    }
+    .btn{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      .vote{
+        padding: 14px;
+        font-size: 20px;
+        background-color: blue;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        color: white;
+      }
+    }
+  }
+  #chartContainer{
+    margin:10px ;
   }
 }
